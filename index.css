@@ -5,6 +5,7 @@
 }
 
 body {
+    padding: 50px;
     background: linear-gradient(#2E335A, #1C1B33) fixed;
 }
 
@@ -33,7 +34,7 @@ body {
     background: #2f2c50;
     box-shadow: 1px 2px 1.5px #1C1B33;
     display: flex;
-    margin-left: 220px;
+    margin-left: 180px;
 }
 .search-bar > input{
     height: 35px;
@@ -64,14 +65,10 @@ body {
     gap: 20px;
 }
 .card{
-    /* border-bottom: 100px solid blue;
-    border-left: 50px solid transparent;
-    height: 100px;
-    width: 0px; */
     height: 150px;
     width: 230px;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 10% 100% 10% 10%;
     box-shadow: 1px 1px 4px rgba(217, 217, 214, 0.7);
     color: white;
     background-image: linear-gradient(to right, #5936B4 , #362A84);
@@ -111,4 +108,131 @@ img{
     font-size: 12px;
     color: #EBEBF5;
     font-weight: 400;
+}
+
+@media screen and (max-width: 700px) {
+    .main-heading{
+        padding: 28px;
+        font-size: 32px;
+        font-weight: 500;
+    
+    }
+    .container{
+        gap: 18px;
+    }
+    #searchIcon{
+        padding: 4px;
+    }
+    .search-bar{
+        margin-left: -100px;
+    }
+    .search-bar > input{
+        height: 32px;
+        width: 320px;
+    }
+    .search-bar > input::placeholder{
+        font-size: 12px;
+        font-weight: 100;
+    }
+    #addCity{
+        height: 40px;
+        width: 90px;
+        border-radius: 4px;
+        padding: 5px 12px;
+        font-weight: 600;
+        font-size: 12px;
+    }
+    #container1{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .card{
+        height: 150px;
+        width: 200px;
+        padding: 8px;
+    }
+    .top{
+        gap: 40px;
+    }
+    .top > .left{
+        font-size: 40px;
+    }
+    .cloudpercent{
+        font-size: 8px;
+    }
+    .weather{
+        margin-left: 8px;
+        font-size: 12px;
+    }
+    
+    .bottom{
+        font-size: 11px;
+    }
+    .hmdty{
+        font-size: 8px;
+    }
+    .bottom > .right{
+        font-size: 10px;
+        font-weight: 300;
+    }
+}
+@media screen and (max-width: 500px) {
+    .main-heading{
+        padding: 25px;
+        font-size: 28px;
+        font-weight: 400;
+    }
+    .container{ 
+        gap: 15px;
+    }
+    .search-bar{
+        margin-left: -200px;
+    }
+    .search-bar > input{
+        height: 28px;
+        width: 220px;
+    }
+    .search-bar > input::placeholder{
+        font-size: 10px;
+        font-weight: 100;
+    }
+    #addCity{
+        height: 40px;
+        width: 90px;
+        border-radius: 4px;
+        padding: 5px 12px;
+        font-weight: 500;
+        font-size: 10px;
+    }
+    #container1{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .card{
+        height: 150px;
+        width: 200px;
+        padding: 8px;
+    }
+    .top{
+        gap: 30px;
+    }
+    .top > .left{
+        font-size: 35px;
+    }
+    .cloudpercent{
+        font-size: 7px;
+    }
+    .weather{
+        margin-left: 7px;
+        font-size: 11px;
+    }
+    
+    .bottom{
+        font-size: 11px;
+    }
+    .hmdty{
+        font-size: 8px;
+    }
+    .bottom > .right{
+        font-size: 8px;
+        font-weight: 300;
+    }
 }
